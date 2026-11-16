@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Concrete Hub Architectural Emblem -->
+  <rect width="64" height="64" rx="14" fill="#142536" />
+  <!-- Structural foundation beam -->
+  <path d="M12 48L32 56L52 48" stroke="#E58A36" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Structural tower / C-H columns -->
+  <path d="M22 44V20L32 14L42 20V44" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Central structural node / beam -->
+  <path d="M22 30H42" stroke="#E58A36" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Precision technical crosshair -->
+  <circle cx="32" cy="30" r="3" fill="#E58A36"/>
+</svg>

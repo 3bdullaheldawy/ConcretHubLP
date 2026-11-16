@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Brand Colors extracted from the Official Concrete Hub Logo */
+    --color-charcoal: #111215;
+    --color-charcoal-light: #1a1c22;
+    --color-charcoal-border: #282a32;
+    --color-gold: #C99738;
+    --color-gold-hover: #dca742;
+    --color-gold-dark: #ad7e26;
+    --color-concrete: #ECECE8;
+    --color-concrete-border: #DCDDD8;
+    --color-concrete-muted: #7A8088;
+    --color-canvas: #F8F8F6;
+    --color-canvas-pure: #FFFFFF;
+
+    /* Bootstrap-inspired Border Radius Design Tokens */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-pill: 9999px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-canvas);
+    color: #1a1a1a;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: #C99738;
+    color: #111215;
+  }
+}
+
+/* Subtle Architectural Grid Pattern */
+.blueprint-grid-subtle {
+  background-image: 
+    linear-gradient(to right, rgba(17, 18, 21, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 18, 21, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.blueprint-grid-dark {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Bootstrap-Inspired Component Utilities */
+.btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.btn-base:active {
+  transform: scale(0.98);
+}
+
+.btn-primary-gold {
+  background-color: var(--color-gold);
+  color: #111215;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+.btn-primary-gold:hover {
+  background-color: var(--color-gold-hover);
+  box-shadow: 0 4px 8px rgba(201, 151, 56, 0.2);
+}
+
+.btn-secondary-charcoal {
+  background-color: var(--color-charcoal);
+  color: #FFFFFF;
+  border: 1px solid var(--color-charcoal-border);
+}
+.btn-secondary-charcoal:hover {
+  background-color: var(--color-charcoal-light);
+  border-color: var(--color-gold);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+.btn-outline-custom:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+.btn-outline-dark:hover {
+  background-color: #f3f4f6;
+  color: #111215;
+  border-color: #9ca3af;
+}
+
+/* Bootstrap-Inspired Card Base */
+.bs-card {
+  border-radius: var(--radius-lg);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease-in-out;
+}
+.bs-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  border-color: rgba(201, 151, 56, 0.4);
+}
+
+.bs-card-dark {
+  border-radius: var(--radius-lg);
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-charcoal-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease-in-out;
+}
+.bs-card-dark:hover {
+  border-color: rgba(201, 151, 56, 0.5);
+}
+
+/* Bootstrap-Inspired Form Controls */
+.form-input-custom {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #d1d5db;
+  background-color: #FFFFFF;
+  color: #1f2937;
+  font-size: 0.875rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-input-custom:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 151, 56, 0.18);
+}
+
+/* Smooth Transitions */
+* {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
