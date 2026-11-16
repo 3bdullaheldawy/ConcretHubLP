@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+﻿import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Navbar } from './components/Navbar';
@@ -17,7 +17,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <div className="min-h-screen bg-[#F8F8F6] flex flex-col selection:bg-[#C99738] selection:text-[#111215]">
           {/* Universal Sticky Navbar */}
@@ -46,3 +46,4 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
