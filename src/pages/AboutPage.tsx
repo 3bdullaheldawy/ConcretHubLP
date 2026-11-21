@@ -51,7 +51,7 @@ export const AboutPage: React.FC = () => {
               <img
                 src={aboutImg}
                 alt="Eng. Hazem Elmazlawy - Concrete Hub"
-                className="w-full h-[440px] object-cover grayscale contrast-115"
+                className="w-full h-[440px] object-cover"
               />
             </div>
           </div>

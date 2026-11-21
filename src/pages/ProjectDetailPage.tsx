@@ -217,7 +217,7 @@ export const ProjectDetailPage: React.FC = () => {
                 <img
                   src={imgSrc}
                   alt={`${title} - Visual 0${gIdx + 1}`}
-                  className="w-full h-full object-cover grayscale contrast-115 hover:grayscale-0 hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover hover:grayscale-0 hover:scale-105 transition-all duration-500"
                   loading="lazy"
                 />
               </div>
@@ -247,7 +247,7 @@ export const ProjectDetailPage: React.FC = () => {
                   <img
                     src={rel.coverImage}
                     alt={language === 'ar' ? rel.title.ar : rel.title.en}
-                    className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 group-hover:scale-105 transition-all"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all"
                   />
                 </Link>
                 <div className="flex-1 flex flex-col justify-between py-1">

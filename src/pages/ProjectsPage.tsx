@@ -99,7 +99,7 @@ export const ProjectsPage: React.FC = () => {
                   <img
                     src={project.coverImage}
                     alt={title}
-                    className="w-full h-full object-cover grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     loading="lazy"
                   />
                   <div className="absolute top-3 end-3 px-2.5 py-1 rounded-[6px] bg-[#111215]/90 text-[11px] font-mono text-[#C99738] border border-white/10">

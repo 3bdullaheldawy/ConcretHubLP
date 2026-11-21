@@ -114,9 +114,8 @@ export const businessInfo: BusinessInfo = {
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Asyut+Street%2C+Sohag%2C+Egypt",
   },
   social: {
-    // Editable placeholders for future social links. Kept empty to avoid fictitious profiles.
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/profile.php?id=61585254770983",
+    instagram: "", // أضف لينك الإنستغرام هنا لما يبقى متاح
     linkedin: "",
     whatsapp: "https://wa.me/201092597773",
   },

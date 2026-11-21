@@ -58,7 +58,7 @@ export const ServicesPage: React.FC = () => {
                     <img
                       src={service.image}
                       alt={title}
-                      className="w-full h-80 sm:h-96 object-cover grayscale contrast-110 hover:grayscale-0 hover:scale-105 transition-all duration-500"
+                      className="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-all duration-500"
                       loading="lazy"
                     />
                     <div className="absolute top-4 start-4 px-3 py-1 rounded-[6px] bg-[#111215] text-[#C99738] font-mono text-xs font-bold border border-white/10">
